@@ -11,3 +11,5 @@ Une synthèse des consigne est disponible [ici](docs/instructions.md).
 Le rapport d'analyse se trouve à [ici](Modèle-audit-SEO.xlsx)
 
 Le journal de bord du projet est disponible [ici](docs/logbook.md)
+
+La liste des problèmes repérés se trouve sur cette [page](docs/problems.md)
