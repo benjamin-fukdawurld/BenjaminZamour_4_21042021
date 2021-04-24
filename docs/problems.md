@@ -8,4 +8,10 @@ avons décelé.
 
 - Images en **BMP**
 - Langue de la page à `Default`
-
+- Spam de **agence design** dans les `keywords`
+- Absence de description
+- Pas de titre dans la page d'accueil
+- Titre inutile dans la page2
+- tous les script sont en début de page ce qui ralenti le chargement de la page
+- Les balises sémantiques ne sont pas utilisées
+- plusieurs h1 sur les pages 
