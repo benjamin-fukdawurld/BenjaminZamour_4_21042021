@@ -28,4 +28,5 @@ devra tenter de répondre notamment à ces questions:
 - Assurer une présence sur différents réseaux (LinkedIn, facebook, instagram, ainsi que des sites spécialisé type Glassdoor) apporterait un plus.
 
 ### Jour 4
-- Analyse de la page selon les conseil duy cours OCR
+- Analyse de la page selon les conseil du cours OCR
+- Ajouter la configuration du caching des données (peut-être livrer n serveur nginx sous Docker)
