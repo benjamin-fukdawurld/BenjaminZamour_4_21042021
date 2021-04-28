@@ -13,3 +13,5 @@ Le rapport d'analyse se trouve à [ici](Modele-audit-SEO.xlsx)
 Le journal de bord du projet est disponible [ici](docs/logbook.md)
 
 La liste des problèmes repérés se trouve sur cette [page](docs/problems.md)
+
+N'hésitez pas à consulter le [rapport d'analyse](rapport_d_analyse.md)
