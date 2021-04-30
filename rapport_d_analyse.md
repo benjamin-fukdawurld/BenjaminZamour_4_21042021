@@ -6,9 +6,9 @@
 
 ## Introduction
 
-L'amélioration du référencement d'un site web n'es pas une tâche ponctuelle. Il s'agit d'une activité chronophage et donc coûteuse. D'autre part, le référencement n'est pas figé dans le marbre, il convient donc de travailler régulièrement et efficacement afin de maximiser ses chances d'apparaître dans les premiers résultats lors des recherches google.
+L'amélioration du référencement d'un site web n'est pas une tâche ponctuelle. Il s'agit d'une activité chronophage et donc coûteuse. D'autre part, le référencement n'est pas figé dans le marbre, il convient donc de travailler régulièrement et efficacement afin de maximiser ses chances d'apparaître dans les premiers résultats lors des recherches google.
 
-\*Le SEO c'est un peu comme **_Fight Club_** il y a des règles à respecter\*
+_Le SEO c'est un peu comme **Fight Club** il y a des règles à respecter_
 
 > 1. Avoir un bon contenu,
 > 2. Avoir un bon contenu,
@@ -18,18 +18,28 @@ L'amélioration du référencement d'un site web n'es pas une tâche ponctuelle.
 
 Pour commencer nous allons réaliser un audit préliminaire qui nous permettra de déceler les problèmes et d'identifier les points d'améliorations. Au cours de cet audit nous analyserons également le contenu et nous réfléchirons aux mot-clés à mettre en avant pour améliorer le référencement.
 
+### Déroulé de l'audit
+
+L'audit du site se déroulera de la manière suivante:
+
+- Déterminer le public cible ainsi que les mot-clés sur lequel nous souhaitons capitaliser pour augmenter la visibilité de l'entreprise.
+  - Dans le cadre de cette mission, nous disposons déjà de la recherche sur laquelle nous souhaitons apparaître parmi les premiers résultats. Il s'agit d'`Entreprise web design Lyon`. À partir de cette information nous devons définir des termes et des expressions équivalentes afin d'éviter d'avoir trop de redondance dans le contenu (Google pénalise la redondance). Ces termes nous serons utiles par la suites lorsque nous les feront l'amélioration du contenu
+- Détermination des technologies utilisées pour créer le site (_CMS_, _Framework web_, directement _HTML, CSS et Javascript_)
+  - Cette phase de l'audit nous permettra d'appréhender partiellement la charge de travaille ainsi qu'une partie des actions à mettre en œuvre pour mener à bien cette optimisation.
+    > Selon la technologie utilisée l'optimisation pour les moteurs de recherche peut-être plus ou moins facilité. En effet les _CMS_ et les _Framework web_ utilisent généralement une base commune (`un template`) pour générer les pages. Cela permet de centraliser une partie des modifications et donc réduire la charge de travail.
+
 ### Les points à corriger et améliorer
 
 ## Les actions à mettre en œuvre
 
 Pour mener à bien cette mission, nous allons mettre l'accent sur 3 points:
 
--   Recenser des optimisations _off-page_, notamment la création d'un Google My Business afin de mettre en avant l'entreprise en tant que telle ainsi que de renseigner la zone géographique dans laquelle elle éxerce, à savoir Lyon.
--   Les optimisations _on-page_
-    -   en corrigeant les mauvaises pratiques SEo présente sur la page
-    -   en optimisant le temps de chargement de la page
-    -   en retravaillant le contenu de façon à mettre en avant les mots-clés qui nous intéresse de façon subtile et cohérente
--   L'accessibilité et la localisation.
+- Recenser des optimisations _off-page_, notamment la création d'un Google My Business afin de mettre en avant l'entreprise en tant que telle ainsi que de renseigner la zone géographique dans laquelle elle éxerce, à savoir Lyon.
+- Les optimisations _on-page_
+  - en corrigeant les mauvaises pratiques SEo présente sur la page
+  - en optimisant le temps de chargement de la page
+  - en retravaillant le contenu de façon à mettre en avant les mots-clés qui nous intéresse de façon subtile et cohérente
+- L'accessibilité et la localisation.
 
 ## Résultat de l'audit
 
