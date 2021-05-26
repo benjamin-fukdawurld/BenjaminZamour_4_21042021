@@ -61,10 +61,24 @@ L'audit nous à permis de mettre au jour ces problèmes:
   - L'absence de description pour des pages est un soucis aussi bien pour le référencement, car il s'agit d'un endroit stratégique où mettre nos mots-clés ; qu'en terme d'expérience utilisateur, sans description le visiteur n'a pas plus d'information sur la page que ce que lui fourni le titre.
     > En réponse à ce problème nous allons rédiger une description de 150 à 160 caractères mettant en avant les mot-clés choisis et permettant à l'utilisateur de se faire rapidement une idée du contenu de la page.
 
-- Pas de titre dans la page d'accueil
-- Titre inutile dans la page2
-- tous les script sont en début de page ce qui ralenti le chargement de la page
+- Absence de titre dans la page d'accueil et titre inutile dans la page de contact
+
+  - L'absence de titre est assez similaire dans les problèmes qu'elle génère que l'absence de description.
+    > Nous allons également répondre à ce problème comme nous le faisons pour le problème de la description. Nous allons rédiger un titre pertinent d'une longueur ne dépassant pas 512 pixels, soit environ 55 à 65 caractères en moyenne (pour éviter qu'il ne soit tronqué). Ce titre devra refléter le contenu de la page et donner autant que possible envie aux utilisateur de visiter la page.
+
+- Tous les scripts sont en début de page ce qui ralenti le chargement
+
+  - Le fait que les script soient chargé de façon synchrone en début de page, cela ralenti le premier affichage de la page.
+    > Pour corriger cela nous allons charger les scripts qui ne gère pas l'affichage de façon asynchrone. Cela permettra d'afficher la page avant que les scripts ne soient entièrement chargés.
+
+- Les feuilles de styles et les script ne sont pas minifiés
+
+  - Les script non minifiés prennent plus de place en mémoire que leur version minifié pour un même résultat. Cette différence de taille implique un temps de chargement plus long ce qui nuit à la _crawlabilité_ du site.
+    > Nous allons utiliser des outils de minification pour générer les versions minifiées de ces fichiers.
+
 - Les balises sémantiques ne sont pas utilisées
+  - Les balises sémantiques permettent de donner des meta-informations sur le contenu de la page. Ces informations aide les moteurs de recherche à identifier le contenu d'une page et donc facilite son analyse.
+    > Pour corriger cela nous allons séparer les la page en 3 zones principales, `header`, `main`, `footer`. À l'intérieur du `main` nous allons subdiviser le contenu en `section` et mettre le contenu principale à l'intérieur d'un `article`.
 
 ## Les actions à mettre en œuvre
 
