@@ -21,17 +21,20 @@ render("templates/html.ejs", {
     title: "La Chouette Agence",
     minified: true,
     contentTemplate: "home/home",
-    contentData: {services, projects},
+    contentData: { services, projects }
 }).then((html) => {
     return Promise.all([
         fs.writeFile("../dist/index2.html", html),
-        fs.writeFile("../dist/index2.min.html", minify(html, {
-            keepClosingSlash: true,
-            collapseWhitespace: true,
-            collapseInlineTagWhitespace: true,
-            removeComments: true,
-            minifyCSS: true,
-            minifyJS: true,
-        }))
+        fs.writeFile(
+            "../dist/index2.min.html",
+            minify(html, {
+                keepClosingSlash: true,
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true,
+                removeComments: true,
+                minifyCSS: true,
+                minifyJS: true
+            })
+        )
     ]);
 });
