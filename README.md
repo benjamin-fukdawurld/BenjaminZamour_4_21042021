@@ -8,6 +8,10 @@ Le sujet du projet est disponible [ici](https://openclassrooms.com/fr/paths/185/
 
 Une synthèse des consigne est disponible [ici](docs/instructions.md).
 
-Le rapport d'analyse se trouve à [ici](Modèle-audit-SEO.xlsx)
+Le rapport d'analyse se trouve à [ici](Modele-audit-SEO.xlsx)
 
 Le journal de bord du projet est disponible [ici](docs/logbook.md)
+
+La liste des problèmes repérés se trouve sur cette [page](docs/problems.md)
+
+N'hésitez pas à consulter le [rapport d'analyse](rapport_d_analyse.md)
