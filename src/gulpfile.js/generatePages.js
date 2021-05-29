@@ -1,16 +1,30 @@
 const { src, dest, parallel } = require("gulp");
 const rename = require("gulp-rename");
 const ejs = require("gulp-ejs");
+const htmlmin = require("gulp-htmlmin");
+const prettier = require("gulp-prettier");
+const gulpif = require("gulp-if");
 
-const indexPage = require("../resources/pages/index");
-const pages = [indexPage, { name: "contact", data: indexPage.data }];
+const homePage = require("../resources/pages/home");
+const contactPage = require("../resources/pages/contact");
+const pages = [homePage, contactPage];
 
 function generatePage(name, data) {
     return function () {
         return src("./resources/templates/html.ejs")
             .pipe(ejs(data))
             .pipe(rename({ basename: name, extname: ".html" }))
-            .pipe(dest("./test"));
+            .pipe(
+                gulpif(
+                    process.env.NODE_ENV === "production",
+                    htmlmin({ collapseWhitespace: true }),
+                    prettier({
+                        printWidth: 100,
+                        tabWidth: 4,
+                    })
+                )
+            )
+            .pipe(dest(process.env.distFolder));
     };
 }
 
