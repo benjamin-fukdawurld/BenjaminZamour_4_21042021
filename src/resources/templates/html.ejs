@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
     <!-- Head -->
-    <%- include('head', {keywords, description, title, minified}) %>
+    <%- include('head/head', {keywords, description, title, minified}) %>
     <body>
-        <!-- header -->
-        <%- include('header', {}) %>
-        <!-- main -->
-        <%- include(contentTemplate, contentData) %>
-        <!-- footer -->
-        <%- include('footer', {}) %>
+        <header><%- include('header/header', {}) %></header>
+        <main><%- include(contentTemplate, contentData) %></main>
+        <footer><%- include('footer/footer', {}) %></footer>
     </body>
 </html>
