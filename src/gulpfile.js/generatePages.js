@@ -4,6 +4,7 @@ const ejs = require("gulp-ejs");
 const htmlmin = require("gulp-htmlmin");
 const prettier = require("gulp-prettier");
 const gulpif = require("gulp-if");
+const validator = require("gulp-html");
 
 const homePage = require("../resources/pages/home");
 const contactPage = require("../resources/pages/contact");
@@ -24,6 +25,7 @@ function generatePage(name, data) {
                     })
                 )
             )
+            .pipe(validator())
             .pipe(dest(process.env.distFolder));
     };
 }

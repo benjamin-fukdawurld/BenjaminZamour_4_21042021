@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const { src, dest, parallel, watch } = require("gulp");
+const { src, dest, parallel, series, watch } = require("gulp");
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
@@ -40,8 +40,22 @@ function copyFonts() {
     );
 }
 
+function copyIndexingFiles() {
+    return src(["./resources/robots.txt", "./resources/sitemap.txt"]).pipe(
+        dest(process.env.distFolder)
+    );
+}
+
+function copyPhpFiles() {
+    return src("./resources/includes/*.php").pipe(
+        dest(process.env.distFolder + "/includes")
+    );
+}
+
 exports.optimiseImages = optimiseImages;
 exports.copyImages = parallel(optimiseImages, copyFavIcon);
+exports.copyIndexingFiles = copyIndexingFiles;
+exports.copyPhpFiles = copyPhpFiles;
 exports.minifyCss = minifyCss;
 exports.minifyJs = minifyJs;
 exports.copyFonts = copyFonts;
@@ -51,7 +65,9 @@ exports.default = parallel(
     generatePages,
     minifyCss,
     minifyJs,
-    copyFonts
+    copyFonts,
+    copyIndexingFiles,
+    copyPhpFiles
 );
 
 exports.watch = function () {
@@ -68,4 +84,8 @@ exports.watch = function () {
     watch("./resources/pages/*", { ignoreInitial: false }, generatePages);
 
     watch("./resources/templates/**", { ignoreInitial: false }, generatePages);
+
+    watch("./resources/*.txt", { ignoreInitial: false }, copyIndexingFiles);
+
+    watch("./resources/includes/*.php", { ignoreInitial: false }, copyPhpFiles);
 };
