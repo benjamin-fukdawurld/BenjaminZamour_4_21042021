@@ -5,6 +5,7 @@
     <body>
         <header><%- include('header/header', {}) %></header>
         <main><%- include(contentTemplate, contentData) %></main>
+        <%- include('utils/scrollToTop', {}) %>
         <footer><%- include('footer/footer', {}) %></footer>
     </body>
 </html>
