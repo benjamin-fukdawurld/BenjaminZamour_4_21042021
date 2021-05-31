@@ -1,0 +1,22 @@
+<div class="col-sm-6">
+    <a
+        href="#"
+        data-lightbox="<%- image.url %>"
+        data-gallery-id="gallery-1"
+        data-caption="<%- image.caption %>"
+        data-frame="snapshot-lb"
+        rel="nofollow"
+    >
+        <picture>
+            <source srcset="<%- image.thumbnail.webp %>" type="image/webp" />
+            <img
+                src="<%- image.thumbnail.jpg %>"
+                alt="<%- image.alt %>"
+                title="<%- image.title %>"
+                class="img-responsive portfolio-thumb"
+            />
+        </picture>
+    </a>
+    <h3 class="mg-md text-center"><%- project.title %></h3>
+    <p class="text-center"><%- project.description %></p>
+</div>
