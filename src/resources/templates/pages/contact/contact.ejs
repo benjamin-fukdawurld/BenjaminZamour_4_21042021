@@ -1,10 +1,15 @@
-<%- include('contact-banner', {}) %>
+<div>
+    <meta itemprop="image" content="img/logo.png" />
+    <%- include('contact-banner', {}) %>
 
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-    <div class="container bloc-lg">
-        <div class="row">
-            <div class="col-sm-6"><%- include('contact-form', {}) %></div>
-            <div class="col-sm-6"><%- include('contact-address', {}) %></div>
+    <div class="bloc bgc-white l-bloc" id="bloc-7">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-6"><%- include('contact-form', {}) %></div>
+                <div class="col-sm-6">
+                    <%- include('contact-address', {}) %>
+                </div>
+            </div>
         </div>
     </div>
 </div>
