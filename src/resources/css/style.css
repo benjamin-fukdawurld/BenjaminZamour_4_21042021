@@ -1049,3 +1049,7 @@ header,
 footer {
     overflow: clip;
 }
+
+#map {
+    height: 400px;
+}
