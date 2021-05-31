@@ -508,7 +508,7 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.4);
     box-shadow: none;
 }
 
@@ -1052,4 +1052,5 @@ footer {
 
 #map {
     height: 400px;
+    margin-bottom: 20px;
 }
