@@ -9,4 +9,5 @@ exports.data = {
     minified: true,
     contentTemplate: "pages/home/home",
     contentData: { services, projects },
+    bodyScript: [],
 };
