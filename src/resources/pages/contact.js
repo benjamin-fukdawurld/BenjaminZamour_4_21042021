@@ -23,7 +23,7 @@ exports.data = {
 }`,
         },
         {
-            src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Y2DS1HlZAYrSPqYu30_JnRBiN2mhcHY&callback=initMap",
+            src: `https://maps.googleapis.com/maps/api/js?key=${process.env.gmap_apikey}&callback=initMap`,
             async: true,
         },
     ],

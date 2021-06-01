@@ -1,2 +1,2 @@
-user-agent: googlebot
+user-agent: *
 sitemap: https://benjamin-fukdawurld.github.io/BenjaminZamour_4_21042021/sitemap.txt
