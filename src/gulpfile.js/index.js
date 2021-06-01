@@ -81,7 +81,7 @@ exports.watch = function () {
 
     watch("./resources/fonts/*", { ignoreInitial: false }, copyFonts);
 
-    watch("./resources/pages/*", { ignoreInitial: false }, generatePages);
+    watch("./resources/pages/**", { ignoreInitial: false }, generatePages);
 
     watch("./resources/templates/**", { ignoreInitial: false }, generatePages);
 
