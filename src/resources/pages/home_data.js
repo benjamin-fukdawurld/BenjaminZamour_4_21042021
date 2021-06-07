@@ -28,8 +28,7 @@ exports.projects = [
                 jpg: "img/1_thumb.jpg",
                 webp: "img/1_thumb.webp",
             },
-            alt:
-                "paris web design logo agence web meilleure agence et refonte site web journal",
+            alt: "Illustration site web pour un journal local",
             title: "",
         },
         project: {
@@ -46,8 +45,7 @@ exports.projects = [
                 jpg: "img/2_thumb.jpg",
                 webp: "img/2_thumb.webp",
             },
-            alt:
-                "paris web design logo agence web meilleure agence, Création d'un site web pour photographes",
+            alt: "Illustration site web pour photographes",
             title: "",
         },
         project: {
@@ -64,8 +62,7 @@ exports.projects = [
                 jpg: "img/3.jpg",
                 webp: "img/3.webp",
             },
-            alt:
-                "paris web design logo agence web meilleure agence, Création d'un site web pour voyageur",
+            alt: "Illustration site web pour voyageur",
             title: "",
         },
         project: {
@@ -82,8 +79,7 @@ exports.projects = [
                 jpg: "img/4.jpg",
                 webp: "img/4.webp",
             },
-            alt:
-                "paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage",
+            alt: "Illustration site web pour agence de mariage",
             title: "",
         },
         project: {
