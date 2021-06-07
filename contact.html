@@ -69,6 +69,7 @@
                                 itemprop="url"
                                 href="https://benjamin-fukdawurld.github.io/BenjaminZamour_4_21042021"
                                 rel="nofollow"
+                                title="Accueil - La chouette agence"
                             >
                                 <img
                                     itemprop="logo"
@@ -151,7 +152,12 @@
                                     data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
                                 >
                                     <div class="form-group">
-                                        <label> Nom </label>
+                                        <label for="name">
+                                            Nom
+                                            <span class="text-danger">
+                                                <abbr title="requis">*</abbr>
+                                            </span></label
+                                        >
                                         <input
                                             id="name"
                                             class="form-control"
@@ -160,7 +166,12 @@
                                         />
                                     </div>
                                     <div class="form-group">
-                                        <label> Adresse email </label>
+                                        <label for="email">
+                                            Adresse email
+                                            <span class="text-danger">
+                                                <abbr title="requis">*</abbr>
+                                            </span>
+                                        </label>
                                         <input
                                             id="email"
                                             class="form-control"
@@ -170,19 +181,24 @@
                                         />
                                     </div>
                                     <div class="form-group">
-                                        <label> Comment nous avez-vous connu ? </label>
-                                        <input
-                                            class="form-control"
-                                            type="email"
-                                            required
-                                            id="input_504"
-                                            tabindex="3"
-                                        />
+                                        <label for="input_504">
+                                            Comment nous avez-vous connu ?
+                                        </label>
+                                        <select id="input_504" tabindex="3">
+                                            <option value="Search Engine" selected>
+                                                Recherche internet
+                                            </option>
+                                            <option value="Social Network">Réseaux sociaux</option>
+                                            <option value="Friend">Bouche à oreille</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>
+                                        <label for="message">
                                             Brief de votre projet (Ajoutez autant de détails que
                                             nécessaire)
+                                            <span class="text-danger">
+                                                <abbr title="requis">*</abbr>
+                                            </span>
                                         </label>
                                         <textarea
                                             id="message"
@@ -194,6 +210,13 @@
                                         >
                                         </textarea>
                                     </div>
+                                    <p>
+                                        Les champs suivis de
+                                        <span class="text-danger"
+                                            ><abbr title="requis">*</abbr></span
+                                        >
+                                        sont obligatoires.
+                                    </p>
                                     <button
                                         class="
                                             bloc-button
@@ -245,9 +268,14 @@
                 </div>
             </div>
         </main>
-        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')">
+        <button
+            class="bloc-button btn btn-d scrollToTop"
+            onclick="scrollToTarget('1')"
+            title="retour en début de page"
+            aria-label="retour en début de page"
+        >
             <span class="fa fa-chevron-up"></span>
-        </a>
+        </button>
 
         <footer>
             <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
