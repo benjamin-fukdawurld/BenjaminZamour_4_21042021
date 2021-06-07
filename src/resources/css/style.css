@@ -1058,6 +1058,7 @@ footer {
 
 a {
     color: #bd5728;
+    transform: scale(1);
 }
 
 a:hover,
@@ -1065,12 +1066,16 @@ a:focus {
     color: #bd5728;
     -webkit-filter: contrast(150%) !important;
     filter: contrast(150%) !important;
+    transform: scale(1.1);
 }
 
 .navbar-nav--link {
     color: #bd5728;
     font-weight: 700;
     font-size: 1.8rem;
+    margin: 0 5px;
+    border-bottom: solid 2px;
+    padding-bottom: 4px !important;
 }
 
 .navbar-brand img:hover,
