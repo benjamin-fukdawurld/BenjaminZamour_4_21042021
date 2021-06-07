@@ -14,6 +14,7 @@
     "ejs": "^3.1.6",
     "gh-pages": "^3.2.0",
     "gulp": "^4.0.2",
+    "gulp-accessibility": "^3.1.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-ejs": "^5.1.0",
     "gulp-html": "^3.4.0",
