@@ -59,8 +59,8 @@ exports.projects = [
             url: "img/3.jpg",
             caption: "Création d'un site internet pour un voyageur",
             thumbnail: {
-                jpg: "img/3.jpg",
-                webp: "img/3.webp",
+                jpg: "img/3_thumb.jpg",
+                webp: "img/3_thumb.webp",
             },
             alt: "Illustration site web pour voyageur",
             title: "",
@@ -76,8 +76,8 @@ exports.projects = [
             url: "img/4.jpg",
             caption: "Conception d'un site pour une agence de mariage",
             thumbnail: {
-                jpg: "img/4.jpg",
-                webp: "img/4.webp",
+                jpg: "img/4_thumb.jpg",
+                webp: "img/4_thumb.webp",
             },
             alt: "Illustration site web pour agence de mariage",
             title: "",
