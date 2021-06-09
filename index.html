@@ -65,10 +65,10 @@
         <meta itemprop="serviceType" content="Web Design" />
         <meta itemprop="priceRange" content="$$$" />
         <meta itemprop="telephone" content="+33123456789" />
-        <header>
+        <header role="banner">
             <div class="bloc bgc-white l-bloc" id="bloc-0">
                 <div class="container bloc-sm">
-                    <nav class="navbar row">
+                    <nav class="navbar row" role="navigation">
                         <div class="navbar-header">
                             <a
                                 class="navbar-brand"
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main role="main">
             <div class="page-container">
                 <!-- presentation -->
                 <div
@@ -327,6 +327,10 @@
                                     title="Illustration site web pour un journal local"
                                 >
                                     <picture>
+                                        <source
+                                            media="(min-width: 350px) and (max-width: 767px)"
+                                            srcset="img/1.jpg"
+                                        />
                                         <source srcset="img/1_thumb.webp" type="image/webp" />
                                         <img
                                             src="img/1_thumb.jpg"
@@ -359,6 +363,10 @@
                                     title="Illustration site web pour photographes"
                                 >
                                     <picture>
+                                        <source
+                                            media="(min-width: 350px) and (max-width: 767px)"
+                                            srcset="img/2.jpg"
+                                        />
                                         <source srcset="img/2_thumb.webp" type="image/webp" />
                                         <img
                                             src="img/2_thumb.jpg"
@@ -392,6 +400,10 @@
                                     title="Illustration site web pour voyageur"
                                 >
                                     <picture>
+                                        <source
+                                            media="(min-width: 350px) and (max-width: 767px)"
+                                            srcset="img/3.jpg"
+                                        />
                                         <source srcset="img/3_thumb.webp" type="image/webp" />
                                         <img
                                             src="img/3_thumb.jpg"
@@ -424,6 +436,10 @@
                                     title="Illustration site web pour agence de mariage"
                                 >
                                     <picture>
+                                        <source
+                                            media="(min-width: 350px) and (max-width: 767px)"
+                                            srcset="img/4.jpg"
+                                        />
                                         <source srcset="img/4_thumb.webp" type="image/webp" />
                                         <img
                                             src="img/4_thumb.jpg"
@@ -492,7 +508,7 @@
             <span class="fa fa-chevron-up"></span>
         </button>
 
-        <footer>
+        <footer role="contentinfo">
             <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
                 <div class="container bloc-sm">
                     <div class="row">
