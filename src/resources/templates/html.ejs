@@ -7,10 +7,10 @@
         <meta itemprop="serviceType" content="Web Design" />
         <meta itemprop="priceRange" content="$$$" />
         <meta itemprop="telephone" content="+33123456789" />
-        <header><%- include('header/header', {}) %></header>
-        <main><%- include(contentTemplate, contentData) %></main>
+        <header role="banner"><%- include('header/header', {}) %></header>
+        <main role="main"><%- include(contentTemplate, contentData) %></main>
         <%- include('utils/scrollToTop', {}) %>
-        <footer><%- include('footer/footer', {}) %></footer>
+        <footer role="contentinfo"><%- include('footer/footer', {}) %></footer>
         <% bodyScript?.forEach(script => { %>
         <!-- begin for -->
         <% if(script.src) { %>
