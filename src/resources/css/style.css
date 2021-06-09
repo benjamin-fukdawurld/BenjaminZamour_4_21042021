@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 body {
+    font-family: "Fira Sans", sans-serif;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -219,7 +222,6 @@ a:hover {
 
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
-.l-bloc .navbar a,
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
 .l-bloc a .icon-md,
@@ -237,8 +239,6 @@ a:hover {
 
 .d-bloc .panel .a-btn:hover,
 .l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
-.l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
 .l-bloc a:hover .icon-md,
 .l-bloc a:hover .icon-lg,
@@ -525,6 +525,7 @@ button {
 
 .scrollToTop span {
     margin-top: 6px;
+    color: white !important;
 }
 
 .showScrollTop {
@@ -540,8 +541,8 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-        Helvetica, Arial;
+    font-family: "Fira Sans", "HelveticaNeue-Light", "Helvetica Neue Light",
+        "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -650,9 +651,8 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
-    font-family: "helvetica";
+.btn {
+    font-family: "Fira Sans";
     font-weight: 400;
     color: #575757 !important;
 }
@@ -757,7 +757,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(110, 100, 70, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,15 +775,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #f3976c;
+    background-color: #bd5728;
 }
 
 .tc-white {
-    color: #f3976c !important;
+    color: #dcdc18 !important;
+    font-weight: 700;
+}
+
+h1.tc-white {
+    letter-spacing: 0.3em;
 }
 
 .btn-atomic-tangerine {
-    background: #f3976c;
+    background: #bd5728;
     color: #ffffff !important;
 }
 
@@ -1053,4 +1058,43 @@ footer {
 #map {
     height: 300px;
     margin-bottom: 20px;
+}
+
+a {
+    color: #bd5728;
+    transform: scale(1);
+}
+
+a:hover,
+a:focus,
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
+    color: #bd5728;
+    -webkit-filter: contrast(150%) !important;
+    filter: contrast(150%) !important;
+    transform: scale(1.1);
+}
+
+.navbar-nav--link {
+    color: #bd5728;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0 5px;
+    border-bottom: solid 2px;
+    padding-bottom: 4px !important;
+}
+
+.navbar-brand img:hover,
+.navbar-nav--link:hover {
+    -webkit-filter: contrast(150%) !important;
+    filter: contrast(150%) !important;
+}
+
+label {
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 6px 12px 5px;
 }
