@@ -9,6 +9,10 @@
         title="<%- image.alt %>"
     >
         <picture>
+            <source
+                media="(min-width: 350px) and (max-width: 767px)"
+                srcset="<%- image.url %>"
+            />
             <source srcset="<%- image.thumbnail.webp %>" type="image/webp" />
             <img
                 src="<%- image.thumbnail.jpg %>"
