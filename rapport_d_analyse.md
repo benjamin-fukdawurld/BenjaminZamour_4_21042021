@@ -110,4 +110,31 @@ L'audit à révélé des problèmes nuisant au temps de chargement de la page, n
 -   L'épuration d'une partie du code en HTML (liens peu pertinents dans le footer, keyword spammés sur la page etc.)
     > L'outil utilisé pour la génération du site peu également minifier le HTML si l'environnement de prod est précisé lors de la génération.
 
-### Les résultats
+### Les résultats obtenus
+
+Pour analyser les performance de la page nous avons décidé d'utiliser [GT Metrix](https://gtmetrix.com/)
+
+Voici des captures d'écrans des résultats de l'analyse avant les modifications:
+
+![Avant modif1](capture_av1.png)
+![Avant modif2](capture_av2.png)
+
+Et voici les résultats après avoir appliqué les modification
+
+![Après modif1](capture_ap1.png)
+![Après modif2](capture_ap2.png)
+
+Pour commencer nous pouvons constater une amélioration de la qualité structurelle du site de **13%** la faisant passer de 85% à 98%.
+On constate également la diminution du temps de rendu du contenu le plus important (en terme de volume de données), passant de 773ms à 425ms, soit une amélioration de l'ordre de **45%**.
+D'un point de vu global, le temps de chargement de la page est passé de 893ms à 577ms ce qui représente une amélioration de plus de **35%** des performances de la page.
+
+Les actions effectuées lors de cette phase d'optimisation nous ont permis d'améliorer significativement les performances de la page, cependant il persiste des axes d'améliorations envisageable au cours d'une prochaine passe d'optimisation.
+On pourrait par exemple comme dit précédemment améliorer la prise en charge des image dans des formats plus récents comme le webp dans les feuilles de style CSS en suivant par exemple les indications fournies par [cette article de CSS-tricks](https://css-tricks.com/using-webp-images/). Il serait également très intéressant de travailler conjointement avec les équipes opérationnelles afin de configurer la mise en cache du contenu statique pour améliorer encore les performances.
+
+## Conclusion
+
+À ce jour, les améliorations en terme de SEO, d'accéssibilité ainsi que de performances ont permi de perfectionner le site autant en terme de visibilité qu'en terme d'expérience utilisateur.
+
+Malgré ce chantier, il est important de veiller à suivre les bonne pratiques conseillées dans le rapport joint à ce document. Il est également impératif de réaliser une veille technologique régulière afin de rester en adéquation avec les recommandations des moteurs de recherches.
+
+Enfin, il me semble primordial de rappeler la règle principale pour une bonne visibilité sur internet, autant pour les moteurs de recherche que pour les réseaux sociaux. Il est absolument nécessaire de générer régulièrement du contenu de qualité afin de susciter l'intérêt de nos visiteurs.
