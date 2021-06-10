@@ -20,11 +20,15 @@ exports.data = {
         position: agence,
         map: map,
     });
-}`,
+}`
         },
         {
             src: `https://maps.googleapis.com/maps/api/js?key=${process.env.gmap_apikey}&callback=initMap`,
-            async: true,
+            async: true
         },
-    ],
+        {
+            src: "./js/formHandler.min.js",
+            async: true
+        }
+    ]
 };
