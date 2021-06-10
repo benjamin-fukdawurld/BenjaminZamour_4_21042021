@@ -32,12 +32,11 @@
         <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
         <!-- Scripts -->
-        <script src="./js/jquery-2.1.0.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/jqBootstrapValidation.min.js"></script>
+        <script defer src="./js/jquery-2.1.0.min.js"></script>
+        <script defer src="./js/jqBootstrapValidation.min.js"></script>
         <script async src="./js/jquery.touchSwipe.min.js"></script>
         <script async src="./js/blocs.min.js"></script>
-        <script async src="./js/formHandler.min.js"></script>
 
         <title>Nous contacter - La Chouette Agence</title>
 
@@ -370,9 +369,15 @@
         <!-- begin for -->
 
         <!-- begin if -->
-        <script
-        src=https://maps.googleapis.com/maps/api/js?key=AIzaSyCNuICadxDyahMBHIrNTFYQ9Uc9A1R-TPw&callback=initMap
-        async />
+        <script src=https://maps.googleapis.com/maps/api/js?key=undefined&callback=initMap async />
+        <!-- end if -->
+
+        <!-- end for -->
+
+        <!-- begin for -->
+
+        <!-- begin if -->
+        <script src=./js/formHandler.min.js async />
         <!-- end if -->
 
         <!-- end for -->
