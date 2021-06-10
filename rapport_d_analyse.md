@@ -81,19 +81,6 @@ L'audit nous à permis de mettre au jour ces problèmes:
     -   Les balises sémantiques permettent de donner des meta-informations sur le contenu de la page. Ces informations aide les moteurs de recherche à identifier le contenu d'une page et donc facilite son analyse.
         > Pour corriger cela nous allons séparer les la page en 3 zones principales, `header`, `main`, `footer`. À l'intérieur du `main` nous allons subdiviser le contenu en `section` et mettre le contenu indépendant à l'intérieur d'`article`.
 
-## Les actions à mettre en œuvre
-
-Pour mener à bien cette mission, nous allons mettre l'accent sur 3 points:
-
--   Recenser des optimisations _off-page_, notamment la création d'un Google My Business afin de mettre en avant l'entreprise en tant que telle ainsi que de renseigner la zone géographique dans laquelle elle éxerce, à savoir Lyon.
--   Les optimisations _on-page_
-    -   en corrigeant les mauvaises pratiques SEO présentent sur la page
-    -   en optimisant le temps de chargement de la page
-    -   en retravaillant le contenu de façon à mettre en avant les mots-clés qui nous intéresse de façon subtile et cohérente
--   L'accessibilité et la localisation.
-
-## Résultat de l'audit
-
 ## Les optimisations off-page
 
 ### Google my business
@@ -112,3 +99,15 @@ Chacun de ces réseaux nous permettra de créer des backlinks vers notre site et
 Afin de maximiser nos chance d'être bien placé par les moteur de recherche, il est important de faire parler de nous. Un moyen efficace de faire parler de l'agence serait de nouer des partenariat avec des sites pertinents. Ces partenariats nous pouvons par exemple les créer avec nos clients, nous pouvons leurs proposer (en échange de contre-parties) d'écrire ou de partager des articles sur nous, sur leurs sites ou via leurs réseau sociaux. Nous pouvons également contacter des société des domaines connexe au notre (IT, Hébergement, communication, conduction de changement...) pour leur proposer également d'écrire ou de partager des articles élogieux sur notre société toujours en échange de contreparties. Nous pouvons également contacter des sites d'actualités spécialisés dans le domaine afin de tenter de faire publier et partager nos articles.
 
 ## Les optimisations du temps de chargement
+
+L'audit à révélé des problèmes nuisant au temps de chargement de la page, notamment concernant les fichiers resosurces. Afin d'optimiser le temps de chargement nous avons réaliser les tâches suivantes:
+
+-   Réduction de la taille des images, dans la mesure du possible, afin qu'elles soient autant que possible adapté à leur taille d'affichage sur les pages.
+-   Utilisation du format webp pour les images plutôt que le bmp ou le jpeg afin de gagner en temps de chargement.
+    > Cette tâche n'a pas été réalisé sur toutes les images car certaines d'entre elles sont utilisé dans le code CSS et certains navigateur ne prennent pas en charge ce format. L'utilisation du format webp aurait nécessité la mise en place d'un système de _fallback_ si le format n'est pas supporté qui aurait demandé l'ajout d'utilitaires javascript. Ceci pourrait évidemment être fait dans le cadre d'une prestation complémentaire.
+-   La _minification_ des fichiers CSS et Javascript
+-   Le chargement en différé ou de façon asynchrone des scripts non essentiel pour l'affichage du contenu.
+-   L'épuration d'une partie du code en HTML (liens peu pertinents dans le footer, keyword spammés sur la page etc.)
+    > L'outil utilisé pour la génération du site peu également minifier le HTML si l'environnement de prod est précisé lors de la génération.
+
+### Les résultats
