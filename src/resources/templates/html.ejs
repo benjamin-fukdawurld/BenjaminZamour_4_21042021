@@ -15,8 +15,7 @@
         <!-- begin for -->
         <% if(script.src) { %>
         <!-- begin if -->
-        <script <%- script.src ? `src=${script.src}` : "" %> <%- script.async ?
-        "async" : "" %> />
+        <script <%- script.src ? `src=${script.src}` : "" %> <%- script.async ? "async" : "" %> />
         <!-- end if -->
         <% } else { %>
         <!-- begin else -->
